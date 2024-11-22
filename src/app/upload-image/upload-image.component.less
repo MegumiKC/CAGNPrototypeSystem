@@ -1,0 +1,78 @@
+  
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    padding-left: 150px;
+  }
+  
+  .dashed-border {
+    border: 2px dashed #ccc; /* 虚线框 */
+    padding: 20px;
+    position: relative;
+    width: 300px; /* 设置一个宽度 */
+  }
+  
+  .dashed-border h1 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white; /* 确保文字背景为纯白 */
+    padding: 0 10px; /* 为文字添加一些内边距 */
+  }
+  
+  input[type="file"] {
+    margin-top: 20px;
+  }
+  
+  .image-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .image-preview img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc; /* 给预览图像添加边框 */
+    padding: 20px;
+  }
+
+  .srimg{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc; /* 给预览图像添加边框 */
+    padding: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Bootstrap 的主色调 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn:active {
+    transform: translateY(2px);
+  }

@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="dashed-border">
+      <div>请选择要超分辨率的图片</div>
+      <input type="file" accept="image/*" (change)="onImageSelected($event)">
+      @if(imageSrc){
+        <div class="image-preview">
+            <img [src]="imageSrc" alt="Preview" />
+            @if(!SRImageSrc){
+                <button class="btn">选择超分倍率</button>
+                <button class="btn" (click)="showSRImage()">开始超分辨率重建</button>
+            }
+            @else{
+                <img [src]="SRImageSrc" alt="Preview" />
+            }
+        </div>
+      }
+    </div>
+  </div>

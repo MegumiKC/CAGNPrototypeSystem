@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { TiMenuItem } from '@opentiny/ng';
 import { TiNavMenuItem } from '@opentiny/ng';
 import { TiNavModule } from '@opentiny/ng';
+import { TiButtonModule } from '@opentiny/ng';
 
 @Component({
   selector: 'app-nav',
-  imports: [TiNavModule,],
+  imports: [TiNavModule],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.less'
 })

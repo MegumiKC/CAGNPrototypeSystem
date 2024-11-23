@@ -5,8 +5,8 @@ body{
   }
 
   .background {
-    height: 50vh;
-    width: 80vw;
+    // height: 50vh;
+    width: 100vw;
     background-image: url('../../assets/introduceBackground.webp'); /* 替换为你的图片地址 */
     background-size: cover;
     background-position: center;
@@ -19,10 +19,55 @@ body{
 
   .welcome-message {
     font-size: 2em;
-    width: 50vw;
     font-weight: bold;
     text-align: left;
     white-space: pre-wrap;
     display: flex;
     align-items: center;
+  }
+
+//   .imgStructrue{
+//     width: 787px;
+//     height: 389px;
+//     position: relative;
+//     z-index: 1;
+//   }
+
+//   .cotainer{
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .text {
+//     position: absolute;
+//     z-index: 2;
+//   }
+
+.imgStructrue{
+    width: 787px;
+    height: 389px;
+    position: relative; /* 确保 imgStructrue 相对于 cotainer 定位 */
+  }
+  
+  .cotainer{
+    position: relative;
+    text-align: center; /* 用于居中显示图片 */
+  }
+  
+  .text-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 2; /* 确保文字容器在图片上方 */
+  }
+  
+  .text {
+    position: absolute;
+    width: 100%; /* 根据需要调整宽度 */
+    text-align: center; /* 使文字居中显示 */
+    top: 50%; /* 将文字定位到图片的中间 */
+    transform: translateY(-50%); /* 垂直居中 */
+    z-index: 3; /* 确保文字在最上层 */
   }
